@@ -13,7 +13,7 @@
     -fx-font-weight: 400;
 }
 
-#userText, #passwordText {
+#usernameTextField, #passwordField {
     -fx-background-color: #22577E;
     -fx-border-width: 1px;
     -fx-border-color: #E6E6E6;

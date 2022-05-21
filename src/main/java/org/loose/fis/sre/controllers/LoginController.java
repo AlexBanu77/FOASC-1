@@ -32,7 +32,7 @@ public class LoginController implements Initializable {
 
     }
 
-    public void loginButtonClicked(ActionEvent event) {
+    public void loginButtonOnAction(ActionEvent event) {
         if (usernameTextField.getText().isBlank() == false && passwordField.getText().isBlank() == false) {
             loginTextLabel.setText("");
             validateLogin();
@@ -53,7 +53,7 @@ public class LoginController implements Initializable {
 
     }
 
-    public void createAccountClicked(ActionEvent event) {
+    public void createAccountOnAction(ActionEvent event) {
 
     }
 
