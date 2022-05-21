@@ -15,7 +15,7 @@ public class LoginController {
     private Button loginButton;
 
     @FXML
-    private Label createAccount;
+    private Label createAccount,signInLabel,kiwiLabel;
 
     @FXML
     private TextField userText;

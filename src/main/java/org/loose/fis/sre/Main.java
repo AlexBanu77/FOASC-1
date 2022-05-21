@@ -17,8 +17,11 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         primaryStage.setFullScreen(true);
         primaryStage.setTitle("Login");
-        primaryStage.setScene(new Scene(root, 1920, 1080));
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("login.css").toExternalForm());
+        primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
     public static void main(String[] args) {
