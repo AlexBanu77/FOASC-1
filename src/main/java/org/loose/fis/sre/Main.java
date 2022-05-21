@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.loose.fis.sre.services.FileSystemService;
 
 import java.nio.file.Files;
@@ -19,6 +20,7 @@ public class Main extends Application {
         primaryStage.setTitle("Login");
         Scene scene = new Scene(root, 1920, 1080);
         scene.getStylesheets().add(getClass().getClassLoader().getResource("login.css").toExternalForm());
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(scene);
         primaryStage.show();
 

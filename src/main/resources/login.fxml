@@ -20,21 +20,30 @@
                   <Font size="50.0" />
                </font>
             </Label>
-            <ImageView fitHeight="64.0" fitWidth="80.0" layoutX="376.0" layoutY="23.0" onMouseClicked="#homeButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="30.0">
+            <ImageView fitHeight="64.0" fitWidth="80.0" layoutX="376.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="369.0" AnchorPane.topAnchor="30.0">
                <image>
                   <Image url="@img/homeIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="519.0" layoutY="38.0" onMouseClicked="#menuButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="31.0">
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="519.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="31.0">
                <image>
                   <Image url="@img/menuIcon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="735.0" layoutY="38.0" onMouseClicked="#chatButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="31.0">
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="735.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="31.0">
                <image>
                   <Image url="@img/chatIcon.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="1482.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="48.0">
+               <image>
+                  <Image url="@img/menuIcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1701.0" layoutY="32.0" mnemonicParsing="false" onAction="#chatButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
+            <Button layoutX="1808.0" layoutY="32.0" mnemonicParsing="false" onAction="#closeButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
+            <Button layoutX="1594.0" layoutY="31.0" mnemonicParsing="false" onAction="#menuButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
+            <Button layoutX="1471.0" layoutY="32.0" mnemonicParsing="false" onAction="#homeButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="80.0" />
          </children>
          <BorderPane.margin>
             <Insets top="1.0" />
@@ -49,12 +58,12 @@
                   <Font size="50.0" />
                </font>
             </Label>
-            <TextField fx:id="userText" alignment="CENTER" layoutX="544.0" layoutY="397.0" prefHeight="100.0" prefWidth="660.0" promptText="Username" style=": #E6E6E6;" styleClass="" AnchorPane.bottomAnchor="508.0" AnchorPane.leftAnchor="626.0">
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="544.0" layoutY="397.0" prefHeight="100.0" prefWidth="660.0" promptText="Username" style=": #E6E6E6;" styleClass="" AnchorPane.bottomAnchor="508.0" AnchorPane.leftAnchor="626.0">
                <font>
                   <Font size="42.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="passwordText" alignment="CENTER" layoutX="498.0" layoutY="520.0" prefHeight="100.0" prefWidth="660.0" promptText="Password" AnchorPane.bottomAnchor="352.0" AnchorPane.leftAnchor="627.0">
+            <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="498.0" layoutY="520.0" prefHeight="100.0" prefWidth="660.0" promptText="Password" AnchorPane.bottomAnchor="352.0" AnchorPane.leftAnchor="627.0">
                <font>
                   <Font size="42.0" />
                </font>
@@ -82,6 +91,11 @@
             <Label layoutX="637.0" layoutY="229.0" maxHeight="1.0" prefHeight="1.0" prefWidth="660.0" style="-fx-background-color: #E6E6E6;" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="626.0">
                <font>
                   <Font size="1.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginTextLabel" alignment="CENTER" layoutX="626.0" layoutY="82.0" prefHeight="17.0" prefWidth="660.0" textAlignment="CENTER" textFill="#e6e6e6" AnchorPane.leftAnchor="626.0" AnchorPane.rightAnchor="626.0">
+               <font>
+                  <Font size="24.0" />
                </font>
             </Label>
          </children>
