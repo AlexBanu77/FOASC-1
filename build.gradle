@@ -1,11 +1,8 @@
 plugins {
     id 'java'
-<<<<<<< Updated upstream
-=======
     id 'maven-publish'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
->>>>>>> Stashed changes
 }
 
 javafx {
@@ -22,11 +19,6 @@ group = 'org.loose.fis'
 version = '0.1.0-SNAPSHOT'
 description = 'A simple registration example using Java 15+, JavaFX, Maven / Gradle and saving users in Nitrite Java (with encoded passwords).'
 
-<<<<<<< Updated upstream
-test {
-    useJUnitPlatform()
-}
-=======
 sourceCompatibility = 11
 targetCompatibility = 11
 
@@ -37,4 +29,3 @@ dependencies {
 }
 
 mainClassName = 'org.loose.fis.sre.Main'
->>>>>>> Stashed changes
