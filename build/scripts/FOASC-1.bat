@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\FOASC-1-0.1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-15.0.1-win.jar;%APP_HOME%\lib\javafx-fxml-15.0.1.jar;%APP_HOME%\lib\javafx-controls-15.0.1-win.jar;%APP_HOME%\lib\javafx-controls-15.0.1.jar;%APP_HOME%\lib\javafx-graphics-15.0.1-win.jar;%APP_HOME%\lib\javafx-graphics-15.0.1.jar;%APP_HOME%\lib\javafx-base-15.0.1-win.jar;%APP_HOME%\lib\javafx-base-15.0.1.jar;%APP_HOME%\lib\jackson-databind-2.10.1.jar;%APP_HOME%\lib\jackson-annotations-2.10.1.jar;%APP_HOME%\lib\jackson-core-2.10.1.jar
+set CLASSPATH=%APP_HOME%\lib\FOASC-1-0.1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-15.0.1-win.jar;%APP_HOME%\lib\javafx-fxml-15.0.1.jar;%APP_HOME%\lib\javafx-controls-15.0.1-win.jar;%APP_HOME%\lib\javafx-controls-15.0.1.jar;%APP_HOME%\lib\javafx-graphics-15.0.1-win.jar;%APP_HOME%\lib\javafx-graphics-15.0.1.jar;%APP_HOME%\lib\javafx-base-15.0.1-win.jar;%APP_HOME%\lib\javafx-base-15.0.1.jar;%APP_HOME%\lib\nitrite-3.4.3.jar;%APP_HOME%\lib\jackson-databind-2.10.1.jar;%APP_HOME%\lib\podam-7.2.3.RELEASE.jar;%APP_HOME%\lib\slf4j-api-1.7.30.jar;%APP_HOME%\lib\h2-mvstore-1.4.200.jar;%APP_HOME%\lib\objenesis-2.6.jar;%APP_HOME%\lib\jackson-annotations-2.10.1.jar;%APP_HOME%\lib\jasypt-1.9.3.jar;%APP_HOME%\lib\okhttp-4.3.1.jar;%APP_HOME%\lib\jackson-core-2.10.1.jar;%APP_HOME%\lib\okio-jvm-2.4.1.jar;%APP_HOME%\lib\kotlin-stdlib-1.3.61.jar;%APP_HOME%\lib\jcip-annotations-1.0.jar;%APP_HOME%\lib\javax.annotation-api-1.3.2.jar;%APP_HOME%\lib\validation-api-1.1.0.Final.jar;%APP_HOME%\lib\commons-lang3-3.8.1.jar;%APP_HOME%\lib\kotlin-stdlib-common-1.3.61.jar;%APP_HOME%\lib\annotations-13.0.jar
 
 
 @rem Execute FOASC-1
