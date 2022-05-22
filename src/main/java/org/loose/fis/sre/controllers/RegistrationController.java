@@ -43,7 +43,7 @@ public class RegistrationController implements Initializable {
         if (usernameTextField.getText().isBlank() || passwordField.getText().isBlank() || confirmPasswordField.getText().isBlank() || registrationField.getText().isBlank()) {
             registrationLabel.setText("Do not leave any fields empty");
         } else {
-            if (passwordField.getText() == confirmPasswordField.getText()) {
+            if (passwordField.getText().equals(confirmPasswordField.getText())) {
                 try {
                     registrationLabel.setText("");
                     UserService.addUser(usernameTextField.getText(), passwordField.getText(), registrationField.getText());
@@ -54,18 +54,6 @@ public class RegistrationController implements Initializable {
                 registrationLabel.setText("Password and Confirm password fields do not match!");
             }
         }
-    }
-
-    public void homeButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void menuButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void chatButtonOnAction(ActionEvent event) {
-
     }
 
     public void goToLogIn(ActionEvent event) throws IOException {

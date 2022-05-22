@@ -20,30 +20,12 @@
                   <Font size="50.0" />
                </font>
             </Label>
-            <ImageView fitHeight="64.0" fitWidth="80.0" layoutX="376.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="369.0" AnchorPane.topAnchor="30.0">
-               <image>
-                  <Image url="@img/homeIcon.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="519.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="31.0">
-               <image>
-                  <Image url="@img/menuIcon.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="735.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="31.0">
-               <image>
-                  <Image url="@img/chatIcon.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="1482.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="48.0">
                <image>
                   <Image url="@img/closeIcon.png" />
                </image>
             </ImageView>
-            <Button layoutX="1701.0" layoutY="32.0" mnemonicParsing="false" onAction="#chatButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
             <Button layoutX="1808.0" layoutY="32.0" mnemonicParsing="false" onAction="#closeButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
-            <Button layoutX="1594.0" layoutY="31.0" mnemonicParsing="false" onAction="#menuButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
-            <Button layoutX="1471.0" layoutY="32.0" mnemonicParsing="false" onAction="#homeButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="80.0" />
          </children>
          <BorderPane.margin>
             <Insets top="1.0" />
