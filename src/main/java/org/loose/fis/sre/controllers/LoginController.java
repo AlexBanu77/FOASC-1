@@ -8,6 +8,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
+import org.loose.fis.sre.exceptions.UsernameAlreadyExistsException;
+import org.loose.fis.sre.services.UserService;
 
 import javax.swing.text.html.ImageView;
 import java.io.File;
@@ -32,12 +34,12 @@ public class LoginController implements Initializable {
 
     }
 
-    public void loginButtonOnAction(ActionEvent event) {
-        if (usernameTextField.getText().isBlank() == false && passwordField.getText().isBlank() == false) {
-            loginTextLabel.setText("");
-            validateLogin();
-        } else {
-            loginTextLabel.setText("Invalid Username or Password! Please try again");
+    public void loginButtonOnAction() {
+        try {
+            UserService.findUser(usernameTextField.getText(),passwordField.getText());
+            loginTextLabel.setText("Username and Password do not match to an existing account!");
+        } catch (UsernameAlreadyExistsException e) {
+            loginTextLabel.setText("Logged in!");
         }
     }
 
@@ -60,9 +62,5 @@ public class LoginController implements Initializable {
     public void closeButtonOnAction(ActionEvent event) {
         Stage stage = (Stage) loginButton.getScene().getWindow();
         stage.close();
-    }
-
-    public void validateLogin(){
-
     }
 }
