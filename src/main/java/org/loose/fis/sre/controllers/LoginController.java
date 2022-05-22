@@ -39,7 +39,7 @@ public class LoginController implements Initializable {
 
     }
 
-    public void loginButtonOnAction() {
+    public void loginButtonOnAction() throws IOException{
         if(usernameTextField.getText().isBlank() || passwordField.getText().isBlank()) {
             loginTextLabel.setText("Invalid username or password field");
         } else {
@@ -47,21 +47,15 @@ public class LoginController implements Initializable {
                 UserService.findUser(usernameTextField.getText(), passwordField.getText());
                 loginTextLabel.setText("Username and Password do not match to an existing account!");
             } catch (FoundUserException e) {
-                loginTextLabel.setText("Logged in!");
+                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("premeniu.fxml"));
+                Stage primaryStage = (Stage) loginButton.getScene().getWindow();
+                Scene scene = new Scene(root, 1920, 1080);
+                scene.getStylesheets().add(getClass().getClassLoader().getResource("premeniu.css").toExternalForm());
+                primaryStage.setScene(scene);
+                primaryStage.show();
+                primaryStage.setFullScreen(true);
             }
         }
-    }
-
-    public void homeButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void menuButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void chatButtonOnAction(ActionEvent event) {
-
     }
 
     public void createAccountOnAction(javafx.event.ActionEvent event) throws IOException{

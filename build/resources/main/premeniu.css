@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
-#kiwiLabel{
+#kiwiLabel, #orderLabel, #deliveryLabel, #menuLabel{
     -fx-font-family: 'Chewy';
     -fx-font-weight: 400;
     -fx-font-size: 48px;
 }
 
-#orderButton, #menuButton, #deliveryButton{
-    -fx-font-size: 30px;
-}
+
 
 
 

@@ -56,18 +56,6 @@ public class RegistrationController implements Initializable {
         }
     }
 
-    public void homeButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void menuButtonOnAction(ActionEvent event) {
-
-    }
-
-    public void chatButtonOnAction(ActionEvent event) {
-
-    }
-
     public void goToLogIn(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         Stage primaryStage = (Stage) registerButton.getScene().getWindow();
