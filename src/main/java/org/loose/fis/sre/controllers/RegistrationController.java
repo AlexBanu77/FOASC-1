@@ -43,7 +43,7 @@ public class RegistrationController implements Initializable {
         if (usernameTextField.getText().isBlank() || passwordField.getText().isBlank() || confirmPasswordField.getText().isBlank() || registrationField.getText().isBlank()) {
             registrationLabel.setText("Do not leave any fields empty");
         } else {
-            if (passwordField.getText() == confirmPasswordField.getText()) {
+            if (passwordField.getText().equals(confirmPasswordField.getText())) {
                 try {
                     registrationLabel.setText("");
                     UserService.addUser(usernameTextField.getText(), passwordField.getText(), registrationField.getText());
