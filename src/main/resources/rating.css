@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+#kiwiLabel, #ratinLable #nameLable1, #nameLable2, #nameLable3{
+    -fx-font-family: 'Chewy';
+    -fx-font-weight: 400;
+    -fx-font-size: 48px;
+}
+
+
+
+
+
+
+
