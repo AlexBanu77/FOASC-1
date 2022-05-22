@@ -28,5 +28,5 @@ dependencies {
     implementation 'org.dizitart:nitrite:3.4.3'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.1'
 }
-
 mainClassName = 'org.loose.fis.sre.Main'
+
