@@ -18,11 +18,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         initDirectory();
         UserService.initDatabase();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
         primaryStage.setFullScreen(true);
         primaryStage.setTitle("Login");
         Scene scene = new Scene(root, 1920, 1080);
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("login.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("register.css").toExternalForm());
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(scene);
         primaryStage.show();
