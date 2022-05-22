@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+#kiwiLabel, #orderLable #totalLable, #pizzaLable1, #pizzaLable2, #pizzaLable3, #pizzaLable4, #pizzaLable5{
+    -fx-font-family: 'Chewy';
+    -fx-font-weight: 400;
+    -fx-font-size: 48px;
+}
+
+#cancelButton, #nextButton{
+    -fx-font-size: 30px;
+}
+
+
+
+
+
