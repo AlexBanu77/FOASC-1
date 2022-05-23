@@ -17,24 +17,45 @@ public class PremeniuController {
     @FXML
     private Label kiwiLabel, orderLabel, menuLabel, deliveryLabel;
 
-    public void orderButtonOnAction(ActionEvent event){
+    public void orderButtonOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("list.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("list.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
     public void deliveryButtonOnAction(ActionEvent event){
 
     }
 
-    public void menuButtonOnHomeOnAction(ActionEvent event){
+    public void menuButtonOnHomeOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("menu.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("menu.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
     public void homeButtonOnAction(ActionEvent event) {
 
     }
 
-    public void menuButtonOnAction(ActionEvent event) {
+    public void menuButtonOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("menu.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("menu.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
     public void chatButtonOnAction(ActionEvent event) {

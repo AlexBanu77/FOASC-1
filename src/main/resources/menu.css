@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
-#kiwiLabel, #menuLable ,#pizzaLable1, #pizzaLable2 ,#pizzaLable3, #pizzaLable4, #pizzaLable5{
+#kiwiLabel, #menuLabel{
     -fx-font-family: 'Chewy';
     -fx-font-weight: 400;
     -fx-font-size: 48px;

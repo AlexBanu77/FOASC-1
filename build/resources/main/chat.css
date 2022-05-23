@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
-#kiwiLabel, #menuLabel{
+#kiwiLabel, #chatLable{
     -fx-font-family: 'Chewy';
     -fx-font-weight: 400;
     -fx-font-size: 48px;
+}
+
+#nameButton1, #nameButton2, #nameButoon3{
+    -fx-font-size: 30px;
 }
 
 
