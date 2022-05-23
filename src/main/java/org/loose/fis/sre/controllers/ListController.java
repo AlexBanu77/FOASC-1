@@ -80,8 +80,15 @@ public class ListController {
         primaryStage.setFullScreen(true);
     }
 
-    public void chatButtonOnAction(ActionEvent event) {
+    public void chatButtonOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("chat.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("chat.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
     public void closeButtonOnAction(ActionEvent event) {

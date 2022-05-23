@@ -14,34 +14,21 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class ListController {
+public class DeliveryController {
 
     @FXML
-    private Label kiwiLabel, deliveryLable, totalLabel, pizzaLabel2,pizzaLabel1,pizzaLabel3,pizzaLabel4,pizzaLabel5;
-
+    private Label kiwiLabel, deliveryLable;
     @FXML
-    private Button backButton,cancelButton,nextButton,minusButton,minusButton1,minusButton2,minusButton3,minusButton4;
-    public void cancelButtonClicked(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("premeniu.fxml"));
+    private Button backButton,acceptButton1,acceptButton11,acceptButton12;
+
+
+
+    public void AcceptButtonOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("delivery1.fxml"));
         Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
         Scene scene = new Scene(root, 1920, 1080);
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("premeniu.css").toExternalForm());
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        primaryStage.setFullScreen(true);
-    }
-
-    public void minusButtonOnAction(ActionEvent event){
-
-    }
-
-    public void nextButtonClicked(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("order.fxml"));
-        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
-
-        Scene scene = new Scene(root, 1920, 1080);
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("order.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("delivery1.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setFullScreen(true);
@@ -59,16 +46,6 @@ public class ListController {
     }
 
 
-    public void backButtonOnAction(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("premeniu.fxml"));
-        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
-
-        Scene scene = new Scene(root, 1920, 1080);
-        scene.getStylesheets().add(getClass().getClassLoader().getResource("premeniu.css").toExternalForm());
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        primaryStage.setFullScreen(true);
-    }
     public void homeButtonOnAction(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("premeniu.fxml"));
         Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
@@ -80,13 +57,26 @@ public class ListController {
         primaryStage.setFullScreen(true);
     }
 
-    public void chatButtonOnAction(ActionEvent event) {
+    public void chatButtonOnAction(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("chat.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
 
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("chat.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
-    public void closeButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) kiwiLabel.getScene().getWindow();
-        stage.close();
+    public void closeButtonOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("premeniu.fxml"));
+        Stage primaryStage = (Stage) kiwiLabel.getScene().getWindow();
+
+        Scene scene = new Scene(root, 1920, 1080);
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("premeniu.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        primaryStage.setFullScreen(true);
     }
 
 }

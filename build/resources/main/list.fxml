@@ -125,8 +125,8 @@
                </image>
             </ImageView>
             <Button fx:id="minusButton2" layoutX="1379.0" layoutY="208.0" mnemonicParsing="false" onAction="#minusButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" AnchorPane.bottomAnchor="591.0" AnchorPane.leftAnchor="1362.0" />
+            <Button fx:id="minusButton4" mnemonicParsing="false" onAction="#minusButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" />
             <Button fx:id="minusButton3" layoutX="1379.0" layoutY="208.0" mnemonicParsing="false" onAction="#minusButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" AnchorPane.bottomAnchor="516.0" AnchorPane.leftAnchor="1362.0" />
-            <Button fx:id="minusButton4" layoutX="1379.0" layoutY="208.0" mnemonicParsing="false" onAction="#minusButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="1358.0" />
             <Button fx:id="minusButton1" layoutX="1379.0" layoutY="208.0" mnemonicParsing="false" onAction="#minusButtonOnAction" opacity="0.0" prefHeight="64.0" prefWidth="64.0" AnchorPane.leftAnchor="1361.0" />
             <Label fx:id="totalLable" layoutX="565.0" layoutY="708.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="341.0" style="-fx-background-color: #66;" text="Total -20 lei" textAlignment="CENTER" textFill="#e6e6e6">
                <font>
