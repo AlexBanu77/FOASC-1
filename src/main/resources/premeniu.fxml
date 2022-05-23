@@ -13,6 +13,21 @@
    <bottom>
       <AnchorPane prefHeight="948.0" prefWidth="1920.0" style="-fx-background-color: #082032;" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="390.0" fitWidth="390.0" layoutX="403.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="308.0">
+               <image>
+                  <Image url="@img/orderImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="390.0" fitWidth="390.0" layoutX="1229.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="303.0" AnchorPane.rightAnchor="308.0">
+               <image>
+                  <Image url="@img/deliveryImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="550.0" fitWidth="280.0" layoutX="841.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="821.0">
+               <image>
+                  <Image url="@img/menuImage.png" />
+               </image>
+            </ImageView>
             <Button alignment="CENTER" layoutX="420.0" layoutY="276.0" mnemonicParsing="false" onAction="#orderButtonOnAction" opacity="0.15" prefHeight="400.0" prefWidth="400.0" style="-fx-background-radius: 30px; -fx-background-color: #5C7AEA;" textFill="#e6e6e6" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="303.0">
                <font>
                   <Font size="30.0" />
@@ -31,11 +46,6 @@
                   <Font size="30.0" />
                </font>
             </Button>
-            <ImageView fitHeight="390.0" fitWidth="390.0" layoutX="403.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="308.0">
-               <image>
-                  <Image url="@img/orderImage.png" />
-               </image>
-            </ImageView>
             <Label fx:id="orderLabel" alignment="CENTER" layoutX="435.0" layoutY="663.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="139.0" text="Order" textAlignment="CENTER" textFill="#e6e6e6" AnchorPane.bottomAnchor="222.0" AnchorPane.leftAnchor="435.0">
                <font>
                   <Font size="50.0" />
@@ -51,16 +61,6 @@
                   <Font size="50.0" />
                </font>
             </Label>
-            <ImageView fitHeight="390.0" fitWidth="390.0" layoutX="1229.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="303.0" AnchorPane.rightAnchor="308.0">
-               <image>
-                  <Image url="@img/deliveryImage.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="550.0" fitWidth="280.0" layoutX="841.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="821.0">
-               <image>
-                  <Image url="@img/menuImage.png" />
-               </image>
-            </ImageView>
             <Label alignment="CENTER" layoutX="922.0" layoutY="130.0" text="We are here for you, you are here for others!" textFill="#e6e6e6" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="306.0" AnchorPane.topAnchor="100.0">
                <font>
                   <Font size="44.0" />
